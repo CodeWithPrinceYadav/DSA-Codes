@@ -28,5 +28,5 @@ int main(){
     ms.erase(ms.find(1), ms.find(1)+2);
     for(auto x:ms1) cout << x <<" ";
     cout<<endl;
-
+//error
 }
