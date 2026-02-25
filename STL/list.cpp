@@ -14,5 +14,5 @@ int main(){
     for(auto x:ls) cout<<x<<" ";
     cout<<endl;
 //rest functions are sa,\me as vector
-
+//deque is same 
 }
