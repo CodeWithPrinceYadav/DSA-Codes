@@ -19,7 +19,7 @@ class teacher{
 
 //constructor  with parameter
     teacher(string Name, string dept, string subject, double salary ){
-        this ->name = name;
+        this ->name = Name;
         this ->dept = dept;
         this ->subject = subject;
         this ->salary = salary;
@@ -31,6 +31,15 @@ class teacher{
         cout<<"Subject: "<<subject<<endl;
         cout << "Salary: " << salary << endl;
     }
+
+//copy constructor
+    teacher(teacher &orgObj){
+        this ->name = orgObj.name;
+        this ->dept = orgObj.dept;
+        this ->subject = orgObj.subject;
+        this ->salary = orgObj.salary;        
+    }
+
 };
 
 //     void setSalary (double s){
@@ -44,6 +53,10 @@ int main(){
     
     teacher t1 ("Babbu Maan", "CSE", "C++", 50000);
     t1.getInfo();
+
+    teacher t2(t1);
+    t2.getInfo();
+
     // t1.name = "Babbu Maan";
     // t1.subject = "C++";
    // t1.dept = "CSE";
