@@ -9,14 +9,15 @@ class student{
         
     student(string name, double cgpa){      //construtor 
         this->name = name;
-    cgpaPtr = new double;       //deep copy
+        cgpaPtr = new double;    
         *cgpaPtr = cgpa;
         }
 
+    // Deep Copy Constructor
     student(student &obj){
         this->name = obj.name;
         cgpaPtr = new double;
-        *cgpaPtr = cgpa;
+        *cgpaPtr = *(obj.cgpaPtr);
     }
     void getInfo(){
         cout<<"Student Name: "<<name<<endl;
