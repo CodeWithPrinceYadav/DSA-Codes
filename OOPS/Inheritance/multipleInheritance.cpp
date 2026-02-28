@@ -30,15 +30,3 @@ int main(){
    ta1.salary = 25000;
    ta1.getInfo();
 }
-
-
-Day 5 of DSA Journey 🚀
-Day 5/100 ✅ 
-Today I learned about one of the most important OOP concepts:
-🔹 Shallow Copy
-🔹 Deep Copy
-I understood how the default copy constructor performs shallow copy, where memory addresses are copied instead of actual data.
-Deep copy creates a separate memory allocation, which prevents data modification issues and memory conflicts. 🔥 
-
-🔗 github: https://lnkd.in/g32UFtAR
-hashtag#Day5 hashtag#100DaysOfCode hashtag#OOPS hashtag#CPP hashtag#DSA hashtag#PlacementPreparation hashtag#github
