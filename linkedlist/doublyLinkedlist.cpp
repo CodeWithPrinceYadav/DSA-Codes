@@ -74,14 +74,42 @@ node* deleteTail(node* head){
 }
 
 //remove k th element 
-// node* remove_kth_element(node* head, int k){
-//     if(head == NULL)
-// };
+node* remove_kth_element(node* head, int k){
+    if(head == NULL) return NULL;
+    int cnt=0;
+    node* Knode = head;
+    while(Knode!=NULL){
+        cnt++;
+        if(cnt == k) break;
+        Knode = Knode->next;
+    }
+    node* prev = Knode->back;
+    node* front = Knode->next;
+    //then apply 4 four condition
+
+    if(prev == NULL && front == NULL){
+        return NULL;
+    }
+    else if (prev == NULL){
+        return deleteHead(head);
+    }
+    else if (front == NULL){
+        return deleteTail(head);
+    }
+    prev ->next = front;
+    front->back = prev;
+
+    Knode->next = nullptr;
+    Knode->back = nullptr;
+    delete Knode;
+    return head;
+}
+
 
 int main(){
     vector<int>arr = {12,5,8,7};
     node* head = convertArr2DLL(arr);
-    head = deleteTail(head);
+    head = remove_kth_element(head,3);
     print(head);
     return 0;
 }
