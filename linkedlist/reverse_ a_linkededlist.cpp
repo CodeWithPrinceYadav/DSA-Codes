@@ -40,6 +40,7 @@ void print(node* head){
     }
 }
 
+//reverse ll
 node* reverseLL(node* head){
     if (head == nullptr || head -> next == NULL){
         return head;
