@@ -42,7 +42,7 @@ void print(node* head){
     }
 }
 
-
+//delete
 node* deleteKeyOccurrences(node* head , int k){
     node* temp = head;
     while(temp != NULL){
@@ -67,11 +67,10 @@ node* deleteKeyOccurrences(node* head , int k){
 }
 
 int main(){
-    vector<int>arr = {10,2,10,3,6,10};
+    vector<int>arr = {10,3,10,3,65,10,10};
     node* head = convertArr2DLL(arr);
     int k;
     cout<< "Enter k element: ";
-    cin>>k;
     head = deleteKeyOccurrences(head,k);
     print(head);
     return 0;
