@@ -22,13 +22,23 @@ int main(){
 
     //check if the ith bit is set or not
 
-    int n=13 ,i;
-    cout<<"Enter i th value: ";
-    cin>>i;
+    // int n=13 ,i;
+    // cout<<"Enter i th value: ";
+    // cin>>i;
     
-    if (n & (1 << i))
-        cout << "true";
-    else
-       cout << "false";
+    // if (n & (1 << i))
+    //     cout << "true";
+    // else
+    //    cout << "false";
+
+    // // remove the last set bit rightmost
+    // int n = 14;
+    // int ans = n&n-1;
+    // cout<<ans;
+
+    // //check if the number is a power of 2
+    // int n=16;
+    // if((n&(n-1)) == 0 ) cout<<"True";
+    // else cout << "False";
 
 }
