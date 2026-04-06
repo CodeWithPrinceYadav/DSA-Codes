@@ -27,6 +27,6 @@ int main() {
     string exp = "*+PQ-MN";
     cout << "prefix expression: " << exp << endl;
     string ans = prefix2Infix(exp);
-    cout<<"Infix expression"<<ans << endl;
+    cout<<"In expression"<<ans << endl;
     return 0;
 }
