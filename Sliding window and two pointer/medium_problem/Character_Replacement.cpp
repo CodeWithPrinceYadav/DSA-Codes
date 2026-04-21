@@ -29,7 +29,7 @@ public:
 
 int main() {
     Solution sol;
-    string s = "AABABBA";
+    string s = "AAABABBBA";
     int k = 1;
     cout << sol.characterReplacement(s, k) << endl; 
     return 0;
