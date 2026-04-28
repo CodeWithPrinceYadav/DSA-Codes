@@ -23,7 +23,7 @@ public:
             }
 
             count += (right - left + 1);
-        }
+        }Subarrays with K Different Integers
 
         return count;
     }
