@@ -30,7 +30,7 @@ int candy(vector<int>& rating){
 }
 
 int main(){
-    vector<int> rating= {1,3,2,1};
+    vector<int> rating= {1,3.5,2,1};
     int ans = candy(rating);
     cout<<ans;
 }
