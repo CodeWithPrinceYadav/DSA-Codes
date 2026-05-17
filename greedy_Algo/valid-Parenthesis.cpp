@@ -25,7 +25,7 @@ bool isValid(string s){
 }
 
 int main(){
-    string s = "()*)*()";
+    string s = "()*)*()(";
     bool ans = isValid(s);
     cout << boolalpha << ans;
 }
