@@ -6,13 +6,14 @@ struct Node{
     Node* left;
     Node* right;
 
-    Node(int val): data(val) , left(nullptr), right(nullptr);
-}
+    Node(int val): data(val) , left(nullptr), right(nullptr)
+    {};
+};
 
 class Solution{
     public:
     void preorder(Node* root , vector<int> &arr){
-        if(root == nullptr) return 0 ;
+        if(root == nullptr) return ;
 
         arr.push_back(root->data);
         preorder(root->left, arr);
@@ -32,4 +33,13 @@ int main(){
     root->right = new Node(3);
     root->left->left = new Node(4);
     root->left->right = new Node(5);
+
+    Solution sol;
+
+    vector<int> result = sol.preOrder(root);
+    for(int val: result){
+        cout << val <<" ";
+    }
+    cout<<endl;
+    return 0;
 }
