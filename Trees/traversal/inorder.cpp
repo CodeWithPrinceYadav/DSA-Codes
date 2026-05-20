@@ -35,6 +35,7 @@ int main() {
     root->right = new TreeNode(3);
     root->left->left = new TreeNode(4);
     root->left->right = new TreeNode(5);
+    root->left->right->right = new TreeNode(6);
 
     Solution sol;
 
